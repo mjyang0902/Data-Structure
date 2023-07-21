@@ -12,18 +12,21 @@ class stack{
 
 public:
   stack(int);
+  ~stack();
   void push(t);
   t pop();
 };
-
-#include <iostream>
-#include "stack.h"
 
 template <typename t>
 stack<t>::stack(int size){
   t *arr = new t[size];
   top = -1;
   length = size;
+}
+
+template <typename t>
+stack<t>::~stack(){
+  delete [] arr;
 }
 
 template <typename t>
