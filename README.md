@@ -2,7 +2,7 @@
 ## Project Overview
 The data structure implementations in this project are developed and designed based on the classic textbook `Introduction to Algorithms, Third Edition`. I have taken the theoretical knowledge from the textbook and concretely implemented the concepts of data structures within this project.
 
-<img src="https://github.com/mjyang0902/Data-Structure/blob/main/figures/Introduction_to_Algorithm.png"  width="600">
+<img src="https://github.com/mjyang0902/Data-Structure/blob/main/figures/Introduction_to_Algorithm.png"  width="400">
 
 *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (2009). Introduction to Algorithms, Third Edition.*
 
