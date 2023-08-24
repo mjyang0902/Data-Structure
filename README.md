@@ -1,17 +1,11 @@
 # Data-Structure
-The data structures in this repository 
-
-Title: Welcome to the Project - Data Structure Implementation and Learning
-
-Welcome to the README of this project, where we will introduce this resource to help you better understand the purpose and scope of the project.
-
-Project Overview
+## Project Overview
 The data structure implementations in this project are developed and designed based on the classic textbook "Introduction to Algorithms 3rd Edition". We have taken the theoretical knowledge from the textbook and concretely implemented the concepts of data structures within this project.
 
-Project Purpose
+## Project Purpose
 The primary purpose of this project is to aid in learning about data structures. Through the coded implementations provided, we aim to deepen the learners' understanding of how data structures work and their fundamental principles. These code examples are intended to offer practical demonstrations to assist those interested in the concepts of data structures.
 
-Scope of Use
+## Scope of Use
 Please note that while the code in this project serves an educational purpose, it may not be suitable for all professional needs, particularly those involving research and highly optimized scenarios. If your requirements extend beyond learning and basic understanding, we recommend seeking other projects better suited for your needs. In some cases, further optimized code might align more with your professional requirements.
 
 We hope you find practical examples for data structures within this project and that these examples enhance your awareness and comprehension of this field. If you have any questions or suggestions, feel free to communicate with us.
