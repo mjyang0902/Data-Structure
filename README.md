@@ -1,6 +1,9 @@
 # Data-Structure
 ## Project Overview
-The data structure implementations in this project are developed and designed based on the classic textbook `Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (2009). Introduction to Algorithms, Third Edition`. I have taken the theoretical knowledge from the textbook and concretely implemented the concepts of data structures within this project.
+The data structure implementations in this project are developed and designed based on the classic textbook `Introduction to Algorithms, Third Edition`. I have taken the theoretical knowledge from the textbook and concretely implemented the concepts of data structures within this project.
+
+![Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (2009). Introduction to Algorithms, Third Edition.]([https://github.com/mjyang0902/Homework/blob/main/CA/lab2/figures/lw_sw_datapath.png](https://github.com/mjyang0902/Data-Structure/blob/main/figures/Introduction_to_Algorithm.png))
+*Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (2009). Introduction to Algorithms, Third Edition.*
 
 ## Project Purpose
 The primary purpose of this project is to aid in learning about data structures. Through the coded implementations provided, I aim to deepen the learners' understanding of how data structures work and their fundamental principles. These code examples are intended to offer practical demonstrations to assist those interested in the concepts of data structures.
