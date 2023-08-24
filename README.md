@@ -4,7 +4,7 @@ The data structure implementations in this project are developed and designed ba
 
 <img src="https://github.com/mjyang0902/Data-Structure/blob/main/figures/Introduction_to_Algorithm.png"  width="400">
 
-*[https://dahlan.unimal.ac.id/files/ebooks/2009%20Introduction%20to%20Algorithms%20Third%20Ed.pdf](Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (2009). Introduction to Algorithms, Third Edition.)*
+[*Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (2009). Introduction to Algorithms, Third Edition.*](https://dahlan.unimal.ac.id/files/ebooks/2009%20Introduction%20to%20Algorithms%20Third%20Ed.pdf)
 
 ## Project Purpose
 The primary purpose of this project is to aid in learning about data structures. Through the coded implementations provided, I aim to deepen the learners' understanding of how data structures work and their fundamental principles. These code examples are intended to offer practical demonstrations to assist those interested in the concepts of data structures.
