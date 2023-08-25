@@ -22,21 +22,28 @@ In cases where an array is used for implementation, a fixed size is established 
 
 ## Usage
 ### CPlusPlus
-First include `stack.h` in your code.
+To use the stack implementation in your C++ code, follow these steps:
+1. Include the stack.h header file in your code:
 ```
-#include '**your path**/stack.h'
+#include "path_to_stack.h"
 ```
-To initialize a stack, call
+Replace "path_to_stack.h" with the actual path to the stack.h header file.
+
+2. Initialize a stack instance using the template syntax:
 ```
 stack<type> my_stack(n); 
 ```
-where `type` is the data type of the stack, `my_stack` can change to any name you like, `n` is an integer that the maximum number of elements that this stack can holds.
+- Replace `type` with the desired data type for the stack.
+- Replace `my_stack` with a name of your choice for the stack instance.
+- Replace `n` with an integer that represents the maximum number of elements the stack can hold.
 
-When you want to push element x to the stack, call
+3. Pushing elements onto the stack:
+To add an element x to the stack, use the `push` method:
 ```
-my_stack.push(x)
+my_stack.push(x);
 ```
-When you want to pop element from the stack, call
+4. Popping elements from the stack:
+To remove and retrieve an element from the top of the stack, use the `pop` method:
 ```
-my_stack.pop()
+my_stack.pop();
 ```
