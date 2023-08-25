@@ -24,9 +24,19 @@ In cases where an array is used for implementation, a fixed size is established 
 ### CPlusPlus
 First include `stack.h` in your code.
 ```
-#include 'path/stack.h'
+#include '**your path**/stack.h'
 ```
 To initialize a stack, call
 ```
-stack<type> (n) name 
+stack<type> my_stack(n); 
+```
+where `type` is the data type of the stack, `my_stack` can change to any name you like, `n` is an integer that the maximum number of elements that this stack can holds.
+
+When you want to push element x to the stack, call
+```
+my_stack.push(x)
+```
+When you want to pop element from the stack, call
+```
+my_stack.pop()
 ```
