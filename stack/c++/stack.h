@@ -19,7 +19,7 @@ public:
 
 template <typename t>
 stack<t>::stack(int size){
-  t *arr = new t[size];
+  arr = new t[size];
   top = -1;
   length = size;
 }
@@ -31,22 +31,12 @@ stack<t>::~stack(){
 
 template <typename t>
 bool stack<t>::empty(){
- if(top==-1){
-    return true;
-  }   
-  else{
-    return false;
-  }
+  return (top == -1);
 }
 
 template <typename t>
 bool stack<t>::full(){
-  if(top==length-1){
-    return true;
-  }
-  else{
-    return false;
-  }
+  return (top == length-1);
 }
 
 template <typename t>
