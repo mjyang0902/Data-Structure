@@ -19,3 +19,14 @@ In cases where an array is used for implementation, a fixed size is established 
 | Push | Pop | Stack-Empty | Stack-Full |
 |:---:|:---:|:---:|:---:|
 | $$O(1)$$ | $$O(1)$$ | $$O(1)$$ | $$O(1)$$ | 
+
+## Usage
+### CPlusPlus
+First include `stack.h` in your code.
+`
+#include 'path/stack.h'
+`
+Call 
+`
+stack<type> (n) name 
+`
