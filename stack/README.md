@@ -20,8 +20,6 @@ When using array implementation, becasue we need to give the size when initializ
 **Notice:** We can avoid overflow by using list implementation or use dynamic array.
 
 ## Time Complexity
-| Push | $$O(1)$$ |
-|:---:|:---:|
-| Pop | $$O(1)$$ | 
-| Stack-Empty | $$O(1)$$ |
-| Stack-Full | $$O(1)$$ |
+| Push | Pop | Stack-Empty | Stack-Full |
+|:---:|:---:|:---:|:---:|
+| $$O(1)$$ | $$O(1)$$ | $$O(1)$$ | $$O(1)$$ | 
