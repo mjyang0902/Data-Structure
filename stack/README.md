@@ -23,10 +23,10 @@ In cases where an array is used for implementation, a fixed size is established 
 ## Usage
 ### CPlusPlus
 First include `stack.h` in your code.
-``
+```
 #include 'path/stack.h'
-``
-Call 
-``
+```
+To initialize a stack, call
+```
 stack<type> (n) name 
-``
+```
