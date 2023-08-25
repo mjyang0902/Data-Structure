@@ -1,24 +1,20 @@
 # Stack
-Stack is the data structure that the element deleted from the set is the most recently inserted, i.e. the stack implements a *last-in, first-out* or *LIFO* policy. 
-These names are allusions to physical stacks, such as the spring-loaded stacks of plates used in cafeterias, and clearly the top plate is the only plate accessible.
-A stack can be implemented using an **array** or **linked list**.
+A stack is a fundamental data structure that follows the *last-in, first-out* (LIFO) policy, meaning that the most recently inserted element is the first one to be removed. This concept draws parallels with real-world stacks, like the spring-loaded plates in cafeterias, where only the top plate is accessible. A stack can be implemented using either an **array** or a **linked list**.
 
 ## Attribute
-A stack has an attribute `top`, which represents the last element pushed in the stack (In array implementation, top may be used to be the index of the last element in that array.)
+A stack is characterized by its top attribute, which represents the last element that was pushed onto the stack. In the case of an array implementation, top corresponds to the index of the last element in the array.
 
 ## Operations
-### PUSH(x)
-`Push` is the insert operation in the stack, it will insert the element x to stack and change the `top` to be the new inserted element.
-### POP()
-`Pop` is the delete operation in the stack, it will delete the top from the stack, let the second last element to be the new top, and return the element represented by the old top.
-### TOP() (PEEK())
-`Top` or `Peek` is operation that return the top element but doesn't delete that element from the stack. Some people need to use this operation for some special purpose, but we don't implement this operation in code for the textbook doesn't contain it.
-### STACK-EMPTY()
-`Stack-Empty` is the operation to check whether stack is empty, it will be called in `Pop` to avoid `underflows`, i.e. attempt to pop an empty stack. `Stack-Empty` will return `true` if the stack is empty.
-### STACK-FULL()
-When using array implementation, becasue we need to give the size when initializing the array, which bounded the how many elements can be store in the stack. It will be called in `Push` to avoid `overflows`, i.e. attempy to push element to a full stack. `Stack-Full` will return `true` if the stack is full.
-**Notice:** We can avoid overflow by using list implementation or use dynamic array.
-
+### PUSH
+The `Push` operation adds an element to the top of the stack, updating the top attribute to reflect the newly inserted element.
+### POP
+The `Pop` operation removes the top element from the stack. This action causes the second-to-last element to become the new top, and the element previously at the top is returned.
+### TOP (PEEK)
+The `Top` or `Peek` operation retrieves the top element of the stack without removing it. While some users might find this operation useful for specific tasks, it's important to note that it's not included in our code implementation, as it's not covered in the textbook.
+### STACK-EMPTY
+The `Stack-Empty` operation determines whether the stack is empty. It's invoked within the `Pop` operation to prevent `underflows`, which occur when attempting to pop an element from an empty stack. If the stack is indeed empty, Stack-Empty returns `true`.
+### STACK-FULL
+In cases where an array is used for implementation, a fixed size is established upon array initialization. This size restriction limits the number of elements the stack can hold. The `Stack-Full` operation is used within the `Push` operation to prevent `overflows`—trying to push an element onto a full stack. When the stack is full, Stack-Full returns `true`. It's important to mention that overflow issues **can be avoided** by using a **list-based implementation** or a **dynamic array**.
 ## Time Complexity
 | Push | Pop | Stack-Empty | Stack-Full |
 |:---:|:---:|:---:|:---:|
