@@ -31,7 +31,7 @@ Queue-Empty returns true if the queue is empty.
 **Figure 3:** The figure shows the situation that the queue is empty, i.e. $Q.head=Q.tail$.
 
 ### QUEUE-FULL
-In the case of array implementation, a size is specified when initializing the array, limiting the number of elements the queue can hold. The QUEUE-FULL operation is called within Enqueue to prevent overflows, which occur when attempting to enqueue an element into a full queue. The queue is considered full when $$Q.head = Q.tail+1 mod(Q.length) .$$ QUEUE-FULL returns true if the queue is full. It's worth noting that overflows can be avoided by using a list-based implementation or dynamic arrays.
+In the case of array implementation, a size is specified when initializing the array, limiting the number of elements the queue can hold. The QUEUE-FULL operation is called within Enqueue to prevent overflows, which occur when attempting to enqueue an element into a full queue. The queue is considered full when $$Q.head = Q.tail+1\quad mod(Q.length) .$$ QUEUE-FULL returns true if the queue is full. It's worth noting that overflows can be avoided by using a list-based implementation or dynamic arrays.
 
 ## Time Complexity
 | Enqueue | Dequeue | QUEUE-EMPTY | QUEUE-FULL |
