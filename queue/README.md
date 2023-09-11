@@ -14,10 +14,13 @@ Initially, both $Q.head$ and $Q.tail$ are set to 0.
 The Enqueue operation is used to insert elements into the queue. It inserts an element at the tail of the queue and updates the tail attribute.
 
 ![Figure 1 Enqueue](https://github.com/mjyang0902/Data-Structure/blob/main/queue/figures/queue_enqueue.png)
-**Figure 1:** A queue implemented using an array Q[0..5]. Queue elements appear only in the **lightly shaded** poistions. Initially queue is empty. When calling Enqueue, $Q.tail$ will increase by 1(If $Q.tail = Q.length-1$, $Q.tail$ will update to $0$). The figure shows the queue after calling $Enqueue(Q,4)$, $Enqueue(Q,1)$, and $Enqueue(Q,3)$.
+**Figure 1:** A queue implemented using an array Q[0..5]. Queue elements appear only in the **lightly shaded** poistions. Initially queue is empty. When calling Enqueue, $Q.tail$ will increase by 1 (If $Q.tail = Q.length-1$, $Q.tail$ will update to $0$). The figure shows the queue after calling $Enqueue(Q,4)$, $Enqueue(Q,1)$, and $Enqueue(Q,3)$.
 
 ### DEQUEUE
 The Dequeue operation is used to remove elements from the queue. It deletes the element at the head of the queue, making the second oldest element the new head, and returns the element represented by the old head.
+
+![Figure 2 Dequeue](https://github.com/mjyang0902/Data-Structure/blob/main/queue/figures/queue_dequeue.png)
+**Figure 1:** When calling Dequeue, queue will return the element on the head and $Q.head$ will increase by 1 (If $Q.head = Q.length-1$, $Q.head$ will update to $0$). The figure shows the stack after the calls three Dequeue(), $Q.head$ increase to 3 and return 4,1,3 respectively.
 
 ### QUEUE-EMPTY
 The Queue-Empty operation checks whether the queue is empty. It is called within the Dequeue operation to prevent underflows, which occur when attempting to dequeue from an empty queue. The queue is considered empty when $$Q.head = Q.tail$$
