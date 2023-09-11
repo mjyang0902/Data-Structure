@@ -33,6 +33,12 @@ Queue-Empty returns true if the queue is empty.
 ### QUEUE-FULL
 In the case of array implementation, a size is specified when initializing the array, limiting the number of elements the queue can hold. The QUEUE-FULL operation is called within Enqueue to prevent overflows, which occur when attempting to enqueue an element into a full queue. The queue is considered full when $$Q.head = Q.tail+1\quad mod(Q.length) .$$ QUEUE-FULL returns true if the queue is full. It's worth noting that overflows can be avoided by using a list-based implementation or dynamic arrays.
 
+![Figure 4 Queue Full](https://github.com/mjyang0902/Data-Structure/blob/main/queue/figures/queue_full.png)
+
+**Figure 4:** The figure below illustrates a situation where the queue is considered full, indicated by the condition $Q.head = (Q.tail + 1) \quad mod (Q.length)$. It's important to note that, despite the presence of one "empty" entry, using this approach allows us to easily distinguish between a full and an empty queue. While we do sacrifice the space of one entry, this trade-off significantly enhances efficiency.
+
+This method permits us to use a straightforward condition to assess the queue's status without the need for complex logic. Although it involves wasting one element's space, in most cases, this space utilization is acceptable as it makes the code more understandable and maintainable.
+
 ## Time Complexity
 | Enqueue | Dequeue | QUEUE-EMPTY | QUEUE-FULL |
 |:---:|:---:|:---:|:---:|
