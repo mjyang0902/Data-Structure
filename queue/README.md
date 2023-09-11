@@ -20,14 +20,17 @@ The Enqueue operation is used to insert elements into the queue. It inserts an e
 The Dequeue operation is used to remove elements from the queue. It deletes the element at the head of the queue, making the second oldest element the new head, and returns the element represented by the old head.
 
 ![Figure 2 Dequeue](https://github.com/mjyang0902/Data-Structure/blob/main/queue/figures/queue_dequeue.png)
-**Figure 1:** When calling Dequeue, queue will return the element on the head and $Q.head$ will increase by 1 (If $Q.head = Q.length-1$, $Q.head$ will update to $0$). The figure shows the stack after the calls three Dequeue(), $Q.head$ increase to 3 and return 4,1,3 respectively.
+**Figure 2:** When calling Dequeue, queue will return the element on the head and $Q.head$ will increase by 1 (If $Q.head = Q.length-1$, $Q.head$ will update to $0$). The figure shows the stack after the calls three Dequeue(), $Q.head$ increase to 3 and return 4,1,3 respectively.
 
 ### QUEUE-EMPTY
-The Queue-Empty operation checks whether the queue is empty. It is called within the Dequeue operation to prevent underflows, which occur when attempting to dequeue from an empty queue. The queue is considered empty when $$Q.head = Q.tail$$
+The Queue-Empty operation checks whether the queue is empty. It is called within the Dequeue operation to prevent underflows, which occur when attempting to dequeue from an empty queue. The queue is considered empty when $$Q.head = Q.tail.$$
 Queue-Empty returns true if the queue is empty.
 
+![Figure 3 Queue Empty](https://github.com/mjyang0902/Data-Structure/blob/main/queue/figures/queue_empty.png)
+**Figure 3:** The figure shows the situation that the queue is empty, i.e. $Q.head=Q.tail$.
+
 ### QUEUE-FULL
-In the case of array implementation, a size is specified when initializing the array, limiting the number of elements the queue can hold. The QUEUE-FULL operation is called within Enqueue to prevent overflows, which occur when attempting to enqueue an element into a full queue. The queue is considered full when $$Q.head = Q.tail+1$$ QUEUE-FULL returns true if the queue is full. It's worth noting that overflows can be avoided by using a list-based implementation or dynamic arrays.
+In the case of array implementation, a size is specified when initializing the array, limiting the number of elements the queue can hold. The QUEUE-FULL operation is called within Enqueue to prevent overflows, which occur when attempting to enqueue an element into a full queue. The queue is considered full when $$Q.head = Q.tail+1 mod(Q.length) .$$ QUEUE-FULL returns true if the queue is full. It's worth noting that overflows can be avoided by using a list-based implementation or dynamic arrays.
 
 ## Time Complexity
 | Enqueue | Dequeue | QUEUE-EMPTY | QUEUE-FULL |
