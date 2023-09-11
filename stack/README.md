@@ -9,7 +9,7 @@ A stack is characterized by its top attribute, which represents the last element
 The `Push` operation adds an element to the top of the stack, updating the top attribute to reflect the newly inserted element.
 
 ![Figure 1 Push](https://github.com/mjyang0902/Data-Structure/blob/main/stack/figures/stack_push.png)
-**Figure 1** An array implementation of a stack $S$. The figure shows the stack after the calls Push($S$,1)
+**Figure 1 :**  An array implementation of a stack $S$. The figure shows the stack after the calls Push($S$,1) and Push($S,3).
 
 ### POP
 The `Pop` operation removes the top element from the stack. This action causes the second-to-last element to become the new top, and the element previously at the top is returned.
