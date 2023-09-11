@@ -2,7 +2,7 @@
 A stack is a fundamental data structure that follows the *last-in, first-out* (LIFO) policy, meaning that the most recently inserted element is the first one to be removed. This concept draws parallels with real-world stacks, like the spring-loaded plates in cafeterias, where only the top plate is accessible. A stack can be implemented using either an **array** or a **linked list**.
 
 ## Attribute
-A stack is characterized by its top attribute, which represents the last element that was pushed onto the stack. In the case of an array implementation, top corresponds to the index of the last element in the array.
+A stack is characterized by its top attribute, which represents the last element that was pushed onto the stack. In the case of an array implementation, top corresponds to the index of the last element in the stack.
 
 ## Operations
 ### PUSH
