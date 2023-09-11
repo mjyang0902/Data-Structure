@@ -13,8 +13,13 @@ The `Push` operation adds an element to the top of the stack, updating the top a
 
 ### POP
 The `Pop` operation removes the top element from the stack. This action causes the second-to-last element to become the new top, and the element previously at the top is returned.
+
+![Figure 2 Pop](https://github.com/mjyang0902/Data-Structure/blob/main/stack/figures/stack_pop.png)
+**Figure 2 :**  When calling Pop, stack will return the element on top and $S.top$ will decrease by 1. The figure shows the stack after the calls Pop($S$), $S.top$ decreases to 1 and the element 3 is returned.
+
 ### TOP (PEEK)
 The `Top` or `Peek` operation retrieves the top element of the stack without removing it. While some users might find this operation useful for specific tasks, it's important to note that it's not included in our code implementation, as it's not covered in the textbook.
+
 ### STACK-EMPTY
 The `Stack-Empty` operation determines whether the stack is empty. It's invoked within the `Pop` operation to prevent `underflows`, which occur when attempting to pop an element from an empty stack. If the stack is indeed empty, Stack-Empty returns `true`.
 ### STACK-FULL
