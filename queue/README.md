@@ -6,6 +6,7 @@ A queue has two attributes:
 
 - **Head**: The attribute $Q.head$ that indexes or points to the head of the queue.
 - **Tail**: The attribute $Q.tail$ that indexes the next location at which a newly arriving element will be inserted into the queue.
+  
 Initially, both $Q.head$ and $Q.tail$ are set to 0.
   
 ## Operations
