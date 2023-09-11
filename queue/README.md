@@ -17,10 +17,11 @@ The Enqueue operation is used to insert elements into the queue. It inserts an e
 The Dequeue operation is used to remove elements from the queue. It deletes the element at the head of the queue, making the second oldest element the new head, and returns the element represented by the old head.
 
 ### QUEUE-EMPTY
-The Queue-Empty operation checks whether the queue is empty. It is called within the Dequeue operation to prevent underflows, which occur when attempting to dequeue from an empty queue. The queue is considered empty when $$Q.head = Q.tail$$. Queue-Empty returns true if the queue is empty.
+The Queue-Empty operation checks whether the queue is empty. It is called within the Dequeue operation to prevent underflows, which occur when attempting to dequeue from an empty queue. The queue is considered empty when $$Q.head = Q.tail$$
+Queue-Empty returns true if the queue is empty.
 
 ### QUEUE-FULL
-In the case of array implementation, a size is specified when initializing the array, limiting the number of elements the queue can hold. The QUEUE-FULL operation is called within Enqueue to prevent overflows, which occur when attempting to enqueue an element into a full queue. The queue is considered full when $Q.head = Q.tail+1$. QUEUE-FULL returns true if the queue is full. It's worth noting that overflows can be avoided by using a list-based implementation or dynamic arrays.
+In the case of array implementation, a size is specified when initializing the array, limiting the number of elements the queue can hold. The QUEUE-FULL operation is called within Enqueue to prevent overflows, which occur when attempting to enqueue an element into a full queue. The queue is considered full when $$Q.head = Q.tail+1$$ QUEUE-FULL returns true if the queue is full. It's worth noting that overflows can be avoided by using a list-based implementation or dynamic arrays.
 
 ## Time Complexity
 | Enqueue | Dequeue | QUEUE-EMPTY | QUEUE-FULL |
