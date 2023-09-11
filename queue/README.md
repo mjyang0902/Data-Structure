@@ -10,10 +10,10 @@ A queue has two attributes:
 Initially, both $Q.head$ and $Q.tail$ are set to 0.
   
 ## Operations
-### Enqueue
+### ENQUEUE
 The Enqueue operation is used to insert elements into the queue. It inserts an element at the tail of the queue and updates the tail attribute.
 
-### Dequeue
+### DEQUEUE
 The Dequeue operation is used to remove elements from the queue. It deletes the element at the head of the queue, making the second oldest element the new head, and returns the element represented by the old head.
 
 ### QUEUE-EMPTY
