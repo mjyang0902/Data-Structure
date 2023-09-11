@@ -27,6 +27,7 @@ The Queue-Empty operation checks whether the queue is empty. It is called within
 Queue-Empty returns true if the queue is empty.
 
 ![Figure 3 Queue Empty](https://github.com/mjyang0902/Data-Structure/blob/main/queue/figures/queue_empty.png)
+
 **Figure 3:** The figure shows the situation that the queue is empty, i.e. $Q.head=Q.tail$.
 
 ### QUEUE-FULL
