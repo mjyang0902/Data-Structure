@@ -73,4 +73,3 @@ To remove and retrieve an element from the head of the queue, use the dequeue me
 ```
 my_queue.dequeue();
 ```
-Feel free to modify and expand upon these code snippets to integrate the queue implementation seamlessly into your C++ projects.
