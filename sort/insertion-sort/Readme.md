@@ -13,7 +13,7 @@ After we determine all n elements poistion, the array is being sorted.
 |:---:|:---:|:---:|
 | $$\Theta(n^2)$$ | $$\Theta(n^2)$$ | $$\Theta(n)$$ |
 
-## Stability: True
+** Stability: True**
 
 ## Usage
 ### CPlusPlus
