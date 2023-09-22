@@ -14,7 +14,7 @@ To sort an array with size `n`, we determine each element's position by comparin
 | $$\theta(n^2)$$ | $$\theta(n^2)$$ | $$\theta(n)$$ |
 
 ## Stability
-###　True
+### True
 
 
 ## Usage
