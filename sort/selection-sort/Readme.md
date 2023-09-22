@@ -15,11 +15,11 @@
 
 This process ensures that the smallest element is placed in the first position, the second smallest in the second position, and so on, ultimately resulting in a sorted array.
 
-**Notice:** We only have to find minimum element $n-1$ times, for the left element in position $n$ must be the largest element in the array.
+**Notice:** We only have to find the minimum element $n-1$ times, for the left element in position $n$ must be the largest element in the array.
 
 ![Figure 1](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/selection_sort.png)
 
-**Figure 1:** Selection Sort: For each iteration, we find the minimum within the elements which are black and gray, and exchange it with the element which index is label in the graph.
+**Figure 1:** For each iteration, we find the minimum within the elements which are black and gray, and exchange it with the element whose index is labeled in the graph.
 
 ## Time Complexity
 | Average case | Worst case | Best case |
