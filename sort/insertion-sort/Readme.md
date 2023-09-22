@@ -34,7 +34,7 @@ Replace "path_to_insertion_sort.h" with the actual path to the insertion_sort.h 
    ```
     insertion_sort(arr, size);
    ```
-Replace arr with your integer array.
-Replace size with the integer representing the length of your array.
+ - Replace arr with your integer array.
+ - Replace size with the integer representing the length of your array.
 
 The array will then be sorted.
