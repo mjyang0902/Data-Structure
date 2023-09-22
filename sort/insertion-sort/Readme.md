@@ -13,6 +13,7 @@ To sort an array with size `n`, we determine each element's position by comparin
 |:------------:|:----------:|:---------:|
 | $$\theta(n^2)$$ | $$\theta(n^2)$$ | $$\theta(n)$$ |
 
+<span style="font-size: 24px;">Stability: True</span>
 <b><font size = 30>Stability: True</font></b>
 
 ## Usage
