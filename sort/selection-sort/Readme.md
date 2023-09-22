@@ -26,7 +26,7 @@ This process ensures that the smallest element is placed in the first position, 
 |:------------:|:----------:|:---------:|
 | $$\Theta(n^2)$$ | $$\Theta(n^2)$$ | $$\Theta(n^2)$$ |
 
-- **Explanation**: Selection Sort has a time complexity of $\Theta(n^2)$ in all cases. Finding the minimum element in the unsorted portion requires $\Theta(n)$ operations, and this operation is repeated for each position in the array, resulting in a total time complexity of $Theta(n^2)$.
+- **Explanation**: Selection Sort has a time complexity of $\Theta(n^2)$ in all cases. Finding the minimum element in the unsorted portion requires $\Theta(n)$ operations, and this operation is repeated for each position in the array, resulting in a total time complexity of $\Theta(n^2)$.
 
 ## Stability: False
 
