@@ -7,9 +7,9 @@
 1. **Initialization**: The algorithm starts with the first position in the array, considering it as the initially sorted portion. The rest of the array is considered unsorted.
 
 2. **Sorting Process**:
-   - For each position $i$ from 1 to $n-1$, where $n$ is the length of the array:
-     - **Select** the minimum element in the unsorted portion (from position $i$ to $n$).
-     - Swap the minimum element with the element at position $i$, effectively expanding the sorted portion by one element.
+   For each position $i$ from 1 to $n-1$, where $n$ is the length of the array:
+    - **Select** the minimum element in the unsorted portion (from position $i$ to $n$).
+    - Swap the minimum element with the element at position $i$, effectively expanding the sorted portion by one element.
    
 3. **Repeat** step 2 until the entire array is sorted.
 
