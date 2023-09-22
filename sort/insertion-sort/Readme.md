@@ -11,7 +11,7 @@ To sort an array with size `n`, we determine each element's position by comparin
 ## Time Complexity
 | Average case | Worst case | Best case |
 |:------------:|:----------:|:---------:|
-| Θ(n^2)       | Θ(n^2)     | Θ(n)      |
+| $$\theta(n^2)$$ | $$\theta(n^2)$$ | $$\theta(n)$$ |
 
 **Stability: True**
 
