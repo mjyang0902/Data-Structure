@@ -29,7 +29,13 @@ This process ensures that the smallest element is placed in the first position, 
 - **Explanation**: Selection Sort has a time complexity of $\Theta(n^2)$ in all cases. Finding the minimum element in the unsorted portion requires $\Theta(n)$ operations, and this operation is repeated for each position in the array, resulting in a total time complexity of $Theta(n^2)$.
 
 ## Stability: False
-For exchange the 
+
+Selection Sort is not a stable sorting algorithm because it swaps non-adjacent elements, which can break the original order of elements with the same value. Consider **Figure 2** for example:
+
+![Figure 2](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/selection_sort-2.png)
+
+**Figure 2:** In the original sequence, the blue '5' appears before the red '5'. However, during the sorting process, the blue '5' is exchanged with '3', causing it to be positioned after the red '5'. This exchange breaks the stability of the sorting algorithm.
+
 ## Usage
 
 ### C++
