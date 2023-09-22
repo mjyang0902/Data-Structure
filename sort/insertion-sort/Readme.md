@@ -13,6 +13,7 @@ To sort an array with size `n`, we determine each element's position by comparin
 |:------------:|:----------:|:---------:|
 | $$\theta(n^2)$$ | $$\theta(n^2)$$ | $$\theta(n)$$ |
 
+When the sequence is in increasing order, the while loop do only one time for each iteration, and total has $n-1$ iterations, which causes the time complexity of best case is $$\theta(n)$$.
 ## Stability: True
 
 
