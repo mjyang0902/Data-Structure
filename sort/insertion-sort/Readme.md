@@ -16,7 +16,7 @@ To sort an array with size $n$, we determine each element's position by comparin
 In the best-case scenario, when the sequence is already in **increasing order**, the while loop only executes once for each iteration. There are a total of $n-1$ iterations, which results in a time complexity of $\Theta(n)$.
 
 ## Stability: True
-Insertion Sort maintains stability because elements are only shifted to the left when the predecessor is smaller (not including equal), and these shifts occur with adjacent elements. This ensures that the relative order of elements with equal values remains unchanged.
+Insertion sort maintains stability because elements are only shifted to the left when the predecessor is smaller (not including equal), and these shifts occur with adjacent elements. This ensures that the relative order of elements with equal values remains unchanged.
 
 ## Usage
 
