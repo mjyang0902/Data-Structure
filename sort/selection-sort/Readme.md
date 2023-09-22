@@ -52,7 +52,7 @@ Replace "path_to_selection_sort.h" with the actual path to the selection_sort.h 
    ```
     selection_sort(arr, size);
    ```
-   - Replace arr with your integer array.
-   - Replace size with the integer representing the length of your array.
-   - 
+ - Replace arr with your integer array.
+ - Replace size with the integer representing the length of your array.
+     
 After calling the selection_sort function, your array will be sorted.
