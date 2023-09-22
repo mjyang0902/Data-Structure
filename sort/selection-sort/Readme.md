@@ -7,17 +7,19 @@
 1. **Initialization**: The algorithm starts with the first position in the array, considering it as the initially sorted portion. The rest of the array is considered unsorted.
 
 2. **Sorting Process**:
-   - For each position `i` from 0 to `N-1`, where `N` is the length of the array:
-     - Find the minimum element in the unsorted portion (from position `i` to `N-1`).
-     - Swap the minimum element with the element at position `i`, effectively expanding the sorted portion by one element.
+   - For each position $i$ from 1 to $n-1$, where $n$ is the length of the array:
+     - Find the minimum element in the unsorted portion (from position $i$ to $n$).
+     - Swap the minimum element with the element at position $i$, effectively expanding the sorted portion by one element.
    
 3. **Repeat** step 2 until the entire array is sorted.
 
 This process ensures that the smallest element is placed in the first position, the second smallest in the second position, and so on, ultimately resulting in a sorted array.
 
+**Notice:** We only have to find minimum element $n-1$ times, for the left element in position $n$ must be the largest element in the array.
+
 ![Figure 1](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/selection_sort.png)
 
-**Figure 1:** Selection Sort
+**Figure 1:** Selection Sort: For each iteration, we find the minimum within the elements which are black and gray, and exchange it with the element which index is label in the graph.
 
 ## Time Complexity
 | Average case | Worst case | Best case |
