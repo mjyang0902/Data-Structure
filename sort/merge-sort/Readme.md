@@ -19,3 +19,10 @@ This step efficiently merges two sorted arrays.
 
 ## Merge Sort
 The **Merge Sort** operation is executed using the MERGE-SORT($A, p, r$) procedure for sorting. When calling MERGE-SORT($A, p, r$), we calculate the midpoint as $q = \lfloor \frac{p + r}{2} \rfloor$. We then create two subtasks to sort $A[p..q]$ and $A[q+1..r]$. These subtasks are solved recursively until $p < r$, meaning the subarray contains only one element or is empty, and is thus trivially sorted. Once we have two sorted arrays, we use the <br> MERGE($A, p, q, r$) procedure mentioned above to merge them and obtain the final sorted array.
+
+## Time Complexity
+
+
+## Stability: True
+
+## Usage
