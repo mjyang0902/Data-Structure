@@ -11,4 +11,8 @@ We use the procedure MERGE($A,p,q,r$) to do the **merge** step, $A$ is an array 
 Then we merge the two sorted arrays.  
 
 ![figure 1](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_merge.png)
+
 **figure 1: ** In (a), we copy $A[p..q]$ to $L[1..n_1]$, copy the array $A[q+1..r]$ to $R[1..n_2]$. Then we compare $L[i]$ and $R[j]$, which is 1 and 2. For $1\leq 2$, we put $L[i]$ to $A[k]$ and let i+1, k+1, which is show in (b). In (b), for $L[i]=4\geq 2=R[j]$, we put R[j] to A[k], and j+1, k+1, and which is show in (b) to (c). The same way in (c) to (d).
+
+## Merge Sort
+We use the procedure MERGE-SORT(A,p,r) to do the sorting. When call MERGE-SORT(A,p,r), we will half the length of the array, i.e. let $q = \lfloor \frac{p+r}{2}\rfloor$,
