@@ -34,6 +34,7 @@ The **Merge Sort** operation is executed using the MERGE-SORT($A, p, r$) procedu
 
 ![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
 
+
 ![Equation 1](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_eq1.png)
   
 We can neglect the floor and ceil and for $n_1+n_2=2$, we have 
