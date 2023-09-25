@@ -9,7 +9,7 @@ The **merge** operation is performed using the MERGE($A, p, q, r$) procedure. In
 
 1. Copy the elements from array $A[p..q]$ to $L[1..n_1]$ and the elements from array $A[q+1..r]$ to $R[1..n_2]$.
 2. Compare the first elements in $L$ and $R$. Place the smaller element into array $A$ (in case of equality, choose the element from $L$) and remove it from its original array ($L$ or $R$).
-3. Continue this process until one of the arrays, either $L$ or $R, becomes empty. Then, place the remaining elements from the other array into array $A$ to complete the merge operation.
+3. Continue this process until one of the arrays, either $L$ or $R$, becomes empty. Then, place the remaining elements from the other array into array $A$ to complete the merge operation.
 
 This step efficiently merges two sorted subarrays.
 
