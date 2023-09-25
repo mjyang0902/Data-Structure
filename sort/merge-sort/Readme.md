@@ -15,10 +15,10 @@ This step efficiently merges two sorted subarrays.
 
 ![Figure 1](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_merge.png)
 
-**Figure 1:** In (a), we copy $A[p..q]$ to $L[1..n_1]$ and $A[q+1..r]$ to $R[1..n_2]$. We then compare $L[i]$ and $R[j] (which are 1 and 2). Since $1 \leq 2, we place $L[i]$ into $A[k]$ and increment $i$ and $k, as shown in (b). In (b), since $L[i]=4 \geq 2=R[j, we place $R[j]$ into $A[k$), incrementing $j$ and $k, as shown from (b) to (c). This process continues in (c) and (d).
+**Figure 1:** In (a), we copy $A[p..q]$ to $L[1..n_1]$ and $A[q+1..r]$ to $R[1..n_2]$. We then compare $L[i]$ and $R[j]$ (which are 1 and 2). Since $1 \leq 2$, we place $L[i]$ into $A[k]$ and increment $i$ and $k$, as shown in (b). In (b), since $L[i]=4 \geq 2=R[j]$, we place $R[j]$ into $A[k]$), incrementing $j$ and $k$, as shown from (b) to (c). This process continues in (c) and (d).
 
 ## Merge Sort
-The **Merge Sort** operation is executed using the MERGE-SORT($A, p, r$) procedure for sorting. When calling MERGE-SORT($A, p, r$), we calculate the midpoint as $q = \lfloor \frac{p + r}{2} \rfloor$. We then create two subtasks to sort $A[p..q]$ and $A[q+1..r]$. These subtasks are solved recursively until $p \geq r, meaning the subarray contains only one element or is empty (which actually happens only in the case of a single element), and is thus trivially sorted. Once we have two sorted subarrays, we use the MERGE($A, p, q, r$) procedure mentioned above to merge them and obtain the final sorted subarray.
+The **Merge Sort** operation is executed using the MERGE-SORT($A, p, r$) procedure for sorting. When calling MERGE-SORT($A, p, r$), we calculate the midpoint as $q = \lfloor \frac{p + r}{2} \rfloor$. We then create two subtasks to sort $A[p..q]$ and $A[q+1..r]$. These subtasks are solved recursively until $p \geq r$, meaning the subarray contains only one element or is empty (which actually happens only in the case of a single element), and is thus trivially sorted. Once we have two sorted subarrays, we use the MERGE($A, p, q, r$) procedure mentioned above to merge them and obtain the final sorted array.
 
 ## Time Complexity
 | Average case | Worst case | Best case |
@@ -32,7 +32,7 @@ The **Merge Sort** operation is executed using the MERGE-SORT($A, p, r$) procedu
 
 ![Equation 1](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_eq1.png)
   
-We can simplify this expression by ignoring the floor and ceiling operations, and for $n_1 + n_2 = 2$, we have:
+We can simplify this expression by ignoring the floor and ceiling operations, and for $n_1 + n_2 = n$, we have:
 
  ![Equation 2](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_eq2.png)
 
@@ -40,7 +40,7 @@ By applying the master theorem, we find that $T(n) = \Theta(n\log n)$.
 
 ## Stability: True
 **Proof of Stability:** 
-Suppose we have two stably sorted subarrays. When we merge these two subarrays, if we compare two elements in $L$ and $R and find them equal, we choose the element from $L$ to place in $A. This ensures that the sorted subarray remains stable. 
+Suppose we have two stably sorted subarrays. When we merge these two subarrays, if we compare two elements in $L$ and $R and find them equal, we choose the element from $L$ to place in $A$. This ensures that the sorted subarray remains stable. 
 
 When we merge two subarrays, each with only one element, they are already in a sorted and stable order. Merging them will also maintain stability. By repeatedly performing this process, we ensure that the final sorted subarray is also stable.
 
