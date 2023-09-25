@@ -29,6 +29,8 @@ The **Merge Sort** operation is executed using the MERGE-SORT($A, p, r$) procedu
   First, we decide the time complexity of MERGE. Suppose we use MERGE to merge two sorted array with length $n_1$ and $n_2$, in step 1, copy the elements in original array to $L$ and $R$ cost $\Theta(n_1 + n_2)$, for step 2 and 3, each while loop will put an element to the correct place in the target array, thus we total have $n_1+n_2$ loop, which means the total time complexity of MERGE is $\Theta(n_1+n_2)$.
   
   Now, we use $T(n)$ to represents the time complexity of merge sort a length n array. When we call MERGE-SORT, we recursive call two MERGE-SORT with sort arrays with length $\lfloor \frac{n}{2}\rfloor$ and $\lceil \frac{n}{2}\rceil$, and call MERGE two merge two sorted array, and then we get the recursive relation
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
   
   ![Equation 1](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_eq1.png)
   
