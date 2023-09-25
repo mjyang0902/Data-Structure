@@ -36,7 +36,7 @@ We can neglect the floor and ceil and for $n_1+n_2=2$, we have
 
  ![Equation 2](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_eq2.png)
 
- By master theorem, we have $T(n)=\Theta(n\log n)\qed$
+ By master theorem, we have $T(n)=\Theta(n\log n)$
   
 ## Stability: True
 
