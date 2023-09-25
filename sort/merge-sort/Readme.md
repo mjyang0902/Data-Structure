@@ -30,18 +30,14 @@ The **Merge Sort** operation is executed using the MERGE-SORT($A, p, r$) procedu
   
   Now, we use $T(n)$ to represents the time complexity of merge sort a length n array. When we call MERGE-SORT, we recursive call two MERGE-SORT with sort arrays with length $\lfloor \frac{n}{2}\rfloor$ and $\lceil \frac{n}{2}\rceil$, and call MERGE two merge two sorted array, and then we get the recursive relation
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
-
-![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
-
-
 ![Equation 1](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_eq1.png)
   
 We can neglect the floor and ceil and for $n_1+n_2=2$, we have 
 
  ![Equation 2](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_eq2.png)
-  
 
+ By master theorem, we have $T(n)=\Theta(n\log n)\qed$
+  
 ## Stability: True
 
 ## Usage
