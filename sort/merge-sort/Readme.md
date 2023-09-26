@@ -13,7 +13,7 @@ The **merge** operation is performed using the MERGE($A, p, q, r$) procedure. In
 
 This step efficiently merges two sorted subarrays.
 
-![Figure 1](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_merge.png)
+![Figure 1](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_merg.png)
 
 **Figure 1:** In (a), we copy $A[p..q]$ to $L[1..n_1]$ and $A[q+1..r]$ to $R[1..n_2]$. We then compare $L[i]$ and $R[j]$ (which are 1 and 2). Since $1 \leq 2$, we place $L[i]$ into $A[k]$ and increment $i$ and $k$, as shown in (b). In (b), since $L[i]=4 \geq 2=R[j]$, we place $R[j]$ into $A[k]$), incrementing $j$ and $k$, as shown from (b) to (c). This process continues in (c) and (d).
 
@@ -45,7 +45,7 @@ Suppose we have two stably sorted subarrays. When we merge these two subarrays, 
 When we merge two subarrays, each with only one element, they are already in a sorted and stable order. Merging them will also maintain stability. By repeatedly performing this process, we ensure that the final sorted subarray is also stable.
 
 ![Figure 2](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_stable.png)
-**Figure 2:** We have the compare $L[i]$ with $R[j]$, and we discover that $L[i]=R[j]=4$, thus we have to put the "4" in $L$ to $A$ to guarantee stability.
+**Figure 2:** We have to compare $L[i]$ with $R[j]$, and we discover that $L[i]=R[j]=4$. Thus, we put the "4" from $L$ to $A$ to guarantee stability.
 
 ## Usage
 
