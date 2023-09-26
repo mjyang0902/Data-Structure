@@ -44,6 +44,9 @@ Suppose we have two stably sorted subarrays. When we merge these two subarrays, 
 
 When we merge two subarrays, each with only one element, they are already in a sorted and stable order. Merging them will also maintain stability. By repeatedly performing this process, we ensure that the final sorted subarray is also stable.
 
+![Figure 2](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_stable.png)
+**Figure 2:** We have the compare $L[i]$ with $R[j]$, and we discover $L[i]=R[j]=4$, then we put the "4" in $L$ to $A$ to guarantee stability.
+
 ## Usage
 
 ### C++
