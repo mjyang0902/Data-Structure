@@ -13,7 +13,7 @@ The **merge** operation is performed using the MERGE($A, p, q, r$) procedure. In
 
 This step efficiently merges two sorted subarrays.
 
-![Figure 1](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_merg.png)
+![Figure 1](https://github.com/mjyang0902/Data-Structure/blob/main/sort/figures/merge_sort_merge.png)
 
 **Figure 1:** In (a), we copy $A[p..q]$ to $L[1..n_1]$ and $A[q+1..r]$ to $R[1..n_2]$. We then compare $L[i]$ and $R[j]$ (which are 1 and 2). Since $1 \leq 2$, we place $L[i]$ into $A[k]$ and increment $i$ and $k$, as shown in (b). In (b), since $L[i]=4 \geq 2=R[j]$, we place $R[j]$ into $A[k]$), incrementing $j$ and $k$, as shown from (b) to (c). This process continues in (c) and (d).
 
